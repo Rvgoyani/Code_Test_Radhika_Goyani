@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="sales.css">
+<head>
+<title>Sales Website</title>
+</head>
+<body onload="displayData(data)">
+<div role="navigation" class="navbar">
+  <a class="active" href="#">Company</a> 
+  <a href="#">Projects</a> 
+  <a href="#">Sales</a> 
+  <a href="#">Messages</a>
+  <button class="sign-out">Sign Out</button>
+</div>
+<div role="main" class="sales-info">
+    <h1 class="title">Sales</h1>
+    <div class="filter-quater">
+        <span>Filter by quater:</span>
+        <label><input type="checkbox" id="1-quater-checkbox" value="1-quater" checked>Q1</label>
+        <label><input type="checkbox" id="2-quater-checkbox" value="2-quater" checked>Q2</label>
+        <label><input type="checkbox" id="3-quater-checkbox" value="3-quater" checked>Q3</label>
+        <label><input type="checkbox" id="4-quater-checkbox" value="4-quater" checked>Q4</label>
+    </div>
+    <table id="sales">
+        <tr id="first-row">
+            <th>Month</th>
+            <th class="sales">Sales <i class="fa arrow"></i></th>
+            <th class="salesPerson">Top Salesperson</th>
+        </tr>
+        
+    </table>
+</div>
+<script src="sales.js"></script>
+</body>
+</html>
